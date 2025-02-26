@@ -73,7 +73,7 @@ export default function BirthdayLanding() {
               position: "absolute",
               width: "100%",
               height: "900px",
-              top: "50%",
+              top: "60%",
               transform: "translateY(-50%)",
               display: "flex",
               alignItems: "center",
@@ -122,7 +122,7 @@ export default function BirthdayLanding() {
           transition={{ duration: 0.3 }}
           style={{
             position: "fixed",
-            top: "60%",
+            top: "50%",
             transform: "translate(-50%, -50%)",
             backgroundColor: "white",
             padding: "30px",
