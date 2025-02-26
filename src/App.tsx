@@ -72,7 +72,7 @@ export default function BirthdayLanding() {
             style={{
               position: "absolute",
               width: "100%",
-              height: "1000px",
+              height: "900px",
               top: "50%",
               transform: "translateY(-50%)",
               display: "flex",
