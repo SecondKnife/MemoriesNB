@@ -20,16 +20,20 @@ export default function BirthdayLanding() {
 
   return (
     <div
-      style={{
-        width: "100vw",
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "#FFC0CB",
-        overflow: "hidden",
-        position: "relative",
-      }}
+    style={{
+      width: "100vw",
+      height: "100vh",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundImage: "url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxxZGd0aWs0eWV1b2ZyYjFoODYybHB1ZDlwcDRxeXF3dWc1cWszOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0BKBvMYBEq0CcYmY/giphy.gif')", 
+     backgroundSize: "contain",
+      backgroundPosition: "center", 
+      backgroundRepeat: "no-repeat", 
+      overflow: "hidden",
+      position: "relative",
+      cursor: "pointer",
+    }}
       onClick={() => {
         setIsClicked(true);
       }}
