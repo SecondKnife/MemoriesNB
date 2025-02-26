@@ -20,20 +20,20 @@ export default function BirthdayLanding() {
 
   return (
     <div
-    style={{
-      width: "100vw",
-      height: "100vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundImage: "url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxxZGd0aWs0eWV1b2ZyYjFoODYybHB1ZDlwcDRxeXF3dWc1cWszOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0BKBvMYBEq0CcYmY/giphy.gif')", 
-     backgroundSize: "contain",
-      backgroundPosition: "center", 
-      backgroundRepeat: "no-repeat", 
-      overflow: "hidden",
-      position: "relative",
-      cursor: "pointer",
-    }}
+      style={{
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundImage: "url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxxZGd0aWs0eWV1b2ZyYjFoODYybHB1ZDlwcDRxeXF3dWc1cWszOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT0BKBvMYBEq0CcYmY/giphy.gif')",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        overflow: "hidden",
+        position: "relative",
+        cursor: "pointer",
+      }}
       onClick={() => {
         setIsClicked(true);
       }}
@@ -63,7 +63,12 @@ export default function BirthdayLanding() {
               alignItems: "center",
             }}
           >
-            Yêu Lợn béo vô cùng
+            <motion.span
+              animate={{ color: ["#ff0000", "#00ff00", "#0000ff", "#ff00ff", "#ff0000"] }}
+              transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
+            >
+              Yêu Lợn béo vô cùng
+            </motion.span>
             <motion.span
               style={{ marginLeft: "10px", fontSize: "60px" }}
               animate={{ scale: [1, 1.3, 1] }}
@@ -102,7 +107,7 @@ export default function BirthdayLanding() {
             >
               {[...images, ...images].map((src, index) => (
                 <img
-                onClick={() => setShowDialog(true)}
+                  onClick={() => setShowDialog(true)}
                   key={index}
                   src={src}
                   style={{
@@ -137,7 +142,7 @@ export default function BirthdayLanding() {
           }}
         >
           <p style={{ fontSize: "24px", fontWeight: "bold", marginBottom: "20px", color: "black" }}>
-            Yêu không mà đòi click? 😏, nếu bấm Yes thì đóng tiền quan tâm đi 
+            Yêu không mà đòi click? 😏, nếu bấm Yes thì đóng tiền quan tâm đi
           </p>
           <div style={{ display: "flex", gap: "8px", justifyContent: "center" }}>
             <button
