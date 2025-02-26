@@ -53,7 +53,7 @@ export default function BirthdayLanding() {
           <div
             style={{
               color: "white",
-              marginBottom: "1000px",
+              marginBottom: "800px",
               fontSize: "72px",
               display: "flex",
               alignItems: "center",
